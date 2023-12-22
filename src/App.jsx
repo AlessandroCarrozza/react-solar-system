@@ -1,9 +1,20 @@
 import planetsData from "./data.js";
-import mercImg from "./assets/mercury.png";
+import Box from "./Box/Box.jsx";
 import "./App.css";
+import { useState } from "react";
 
 function App() {
-  return <img src={planetsData[0].image} alt="" />;
+  const [selectedPlanet, setSelectedPlanet] = useState();
+  return (
+    <div>
+      <ul>
+        {planetsData.map((planet, index) => (
+          <Box key={index}>{planet.name}</Box>
+        ))}
+      </ul>
+      <h2>Select a planet</h2>
+    </div>
+  );
 }
 
 export default App;
