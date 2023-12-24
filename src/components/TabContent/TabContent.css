@@ -25,6 +25,11 @@
   flex-direction: column;
   padding: 1rem;
   text-align: left;
+  font-size: 1.3rem;
+}
+
+.rightSide h1 {
+  font-family: "Tourney", sans-serif;
 }
 
 .rightSide > * {
