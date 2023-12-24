@@ -19,21 +19,23 @@ function App() {
   }
 
   return (
-    <div>
-      <ul>
-        {planetsData.map((planet) => (
-          <Box onClick={() => handleClick(planet.name)} key={planet.name}>
-            {planet.name}
-          </Box>
-        ))}
-      </ul>
-      <div>
-        {!selectedPlanet ? (
-          <h1>Select a planet</h1>
-        ) : (
-          // destructuring of the planet object
-          <TabContent {...getPlanetByName(selectedPlanet)}></TabContent>
-        )}
+    <div id="container">
+      <div id="planets">
+        <ul id="btnSide">
+          {planetsData.map((planet) => (
+            <Box onClick={() => handleClick(planet.name)} key={planet.name}>
+              {planet.name}
+            </Box>
+          ))}
+        </ul>
+        <div id="contentSide">
+          {!selectedPlanet ? (
+            <h1>Select a planet</h1>
+          ) : (
+            // destructuring of the planet object
+            <TabContent {...getPlanetByName(selectedPlanet)}></TabContent>
+          )}
+        </div>
       </div>
     </div>
   );

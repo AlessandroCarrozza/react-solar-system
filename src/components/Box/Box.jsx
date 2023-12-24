@@ -1,5 +1,7 @@
+import "./Box.css";
+
 function Box({ children, onClick }) {
-  return <button onClick={onClick}>{children}</button>;
+  return <li onClick={onClick}>{children}</li>;
 }
 
 export default Box;
