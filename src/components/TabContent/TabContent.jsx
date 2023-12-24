@@ -12,7 +12,7 @@ function TabContent({
   return (
     <div id="tabContent">
       <div className="leftSide">
-        <img src={image} alt="Planet" />
+        <img src={image} alt="Planet" className={name} />
       </div>
       <span></span>
       <div className="rightSide">

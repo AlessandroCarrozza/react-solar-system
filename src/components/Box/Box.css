@@ -7,3 +7,8 @@ li {
   margin: 0 0.5rem;
   cursor: pointer;
 }
+
+li:hover {
+  background-color: aliceblue;
+  color: black;
+}

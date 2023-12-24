@@ -16,6 +16,10 @@
   max-height: 500px;
 }
 
+.leftSide img.Saturn {
+  max-height: 450px;
+}
+
 .leftSide {
   justify-content: center;
   align-items: center;
