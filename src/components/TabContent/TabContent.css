@@ -6,7 +6,7 @@
 
 .leftSide,
 .rightSide {
-  width: 50%;
+  width: 49.9%;
   height: 100%;
   display: inline-block;
   display: flex;
@@ -23,4 +23,17 @@
 
 .rightSide {
   flex-direction: column;
+  padding: 1rem;
+  text-align: left;
+}
+
+.rightSide > * {
+  padding: 0.5rem 0;
+}
+
+span {
+  width: 0.2%;
+  height: 95%;
+  display: inline-block;
+  background-color: aliceblue;
 }
