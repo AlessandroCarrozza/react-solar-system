@@ -6,7 +6,7 @@ body {
   text-align: center;
   width: 75%;
   margin: 5rem auto 0;
-  background-color: #1a1a1a;
+  background: linear-gradient(to top, #1a1a1a, #333333);
   color: aliceblue;
   border-radius: 20px;
 }
