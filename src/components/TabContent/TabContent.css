@@ -13,11 +13,11 @@
 }
 
 .leftSide img {
-  max-height: 500px;
+  max-width: 75%;
 }
 
 .leftSide img.Saturn {
-  max-height: 450px;
+  max-width: 90%;
 }
 
 .leftSide {
@@ -53,4 +53,23 @@ span#divider {
 .rightSide span {
   font-weight: 800;
   font-style: italic;
+}
+
+/* responsive */
+@media screen and (max-width: 800px) {
+  .rightSide {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 718px) {
+  .rightSide {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .rightSide {
+    font-size: 1rem;
+  }
 }

@@ -31,3 +31,9 @@ body {
   left: 50%;
   transform: translate(-50%, -200%);
 }
+
+@media screen and (max-width: 1380px) {
+  #contentSide {
+    height: 500px;
+  }
+}
