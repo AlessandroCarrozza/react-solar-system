@@ -12,7 +12,7 @@ body {
 }
 
 #planets {
-  border: 2px solid white;
+  border: 3px solid white;
   border-radius: 20px;
 }
 
@@ -22,4 +22,12 @@ body {
 
 #contentSide {
   height: 600px;
+  position: relative;
+}
+
+#contentSide h1#default {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -200%);
 }

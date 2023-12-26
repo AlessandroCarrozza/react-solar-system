@@ -30,7 +30,7 @@ function App() {
         </ul>
         <div id="contentSide">
           {!selectedPlanet ? (
-            <h1>Select a planet</h1>
+            <h1 id="default">Select a planet</h1>
           ) : (
             // destructuring of the planet object
             <TabContent {...getPlanetByName(selectedPlanet)}></TabContent>
