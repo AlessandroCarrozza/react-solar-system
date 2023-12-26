@@ -14,14 +14,23 @@ function TabContent({
       <div className="leftSide">
         <img src={image} alt="Planet" className={name} />
       </div>
-      <span></span>
+      <span id="divider"></span>
       <div className="rightSide">
         <h1>{name}</h1>
         <h2>{title}</h2>
         <p>{description}</p>
-        <div>{distanceFromSun}</div>
-        <div>{diameter}</div>
-        <div>{gravity}</div>
+        <div>
+          <span>Distance from sun: </span>
+          {distanceFromSun}
+        </div>
+        <div>
+          <span>Diameter: </span>
+          {diameter}
+        </div>
+        <div>
+          <span>Gravity: </span>
+          {gravity}
+        </div>
       </div>
     </div>
   );

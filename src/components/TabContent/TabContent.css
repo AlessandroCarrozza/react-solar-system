@@ -29,7 +29,6 @@
   flex-direction: column;
   padding: 1rem;
   text-align: left;
-  font-size: 1.3rem;
 }
 
 .rightSide h1 {
@@ -40,9 +39,18 @@
   padding: 0.5rem 0;
 }
 
-span {
+span#divider {
   width: 0.2%;
   height: 95%;
   display: inline-block;
   background-color: aliceblue;
+}
+
+.rightSide {
+  font-size: 1.3rem;
+}
+
+.rightSide span {
+  font-weight: 800;
+  font-style: italic;
 }
