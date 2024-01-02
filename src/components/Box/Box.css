@@ -16,6 +16,11 @@ li:hover {
   color: black;
 }
 
+li.isActive {
+  background-color: aliceblue;
+  color: black;
+}
+
 @media screen and (max-width: 1650px) {
   li {
     font-size: 1rem;

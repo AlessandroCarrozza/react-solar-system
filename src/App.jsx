@@ -22,10 +22,14 @@ function App() {
     <div id="container">
       <div id="planets">
         <ul id="btnSide">
+          {/* for each planetsData element, i create a Box component */}
           {planetsData.map((planet) => (
-            <Box onClick={() => handleClick(planet.name)} key={planet.name}>
-              {planet.name}
-            </Box>
+            <Box
+              name={planet.name}
+              isActive={selectedPlanet === planet.name ? true : false}
+              onClick={() => handleClick(planet.name)}
+              key={planet.name}
+            />
           ))}
         </ul>
         <div id="contentSide">
